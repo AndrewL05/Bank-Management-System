@@ -1,0 +1,12 @@
+
+public class InvalidAmountException extends Exception{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5057751292563368799L;
+	
+	public InvalidAmountException() {
+		super("Error: Invalid Amount!");
+	}
+}
