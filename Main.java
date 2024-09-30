@@ -117,12 +117,12 @@ public class Main {
 	public static int readAccts(Bank bank) throws IOException {
 	    // open database input file
 	    // create File object
-	    File dbFile = new File("C:\\Users\\Andrew\\Desktop\\CISC 3115 Workspace\\PrgmHW7\\src\\initAccounts.txt");
+	    File dbFile = new File("initAccounts.txt");
 	    // create Scanner object
 	    Scanner sc = new Scanner(dbFile);
 	    String maturityDate;
 	    int count = 0;  
-	    //int maxAccts = bank.getAccount().size();  // maximum number of active accounts allowed
+	    
 	    while (sc.hasNext()) {
 	        String line = sc.nextLine();
 	        String[] token = line.split(" ");
