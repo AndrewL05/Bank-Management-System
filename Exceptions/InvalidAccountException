@@ -1,0 +1,18 @@
+
+public class InvalidAccountException extends Exception{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5776666895774436520L;
+	
+	public InvalidAccountException() {
+		super("Error: Invalid Account number");
+	}
+	public InvalidAccountException(Account account) {
+		super("Error: Account number " + account.getAccountNumber() + " already exists.");
+	}
+	public InvalidAccountException(int acctNum) {
+		super("Error: Account number " + acctNum + " already exists.");
+	}
+}
